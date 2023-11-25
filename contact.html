@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="C:\Users\cex\Documents\NIYO\ASSESSMENTS\Module 1 HTML Assessment\final logo.png" style="vertical-align: middle;" alt="Logo" width="15" height="15">
+            <span style="vertical-align: middle;"><strong>Bevv</strong></span>
+
+            <h1>Interested in our</h1>
+            <h1>business pricing?</h1>
+            <p id="p-1">Fill out this form to view details and we'll</p>
+            <p>get back to you as soon as possible.</p>
+        </header>
+
+        <main>
+            <section class="contact-page">
+                <form action="action_page.php">
+
+                    <div class="contact-row">
+                        <div class="contact-col-name">
+                            <label for="name">Name:</label>
+                            <input type="text" class="name" name="name" placeholder="Enter Your name">
+                        </div>    
+                        <div class="contact-col-email">   
+                            <label for="company-email">Company Email:</label>
+                            <input type="text" class="company-email" name="company-email" placeholder="Enter Your Company Email"> 
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="contact-col-size">
+                            <label for="company-size">Company Size:</label>
+                            <select id="company-size" name="company-size">
+                                <option value="10-50">10-150 people</option>
+                                <option value="50-100">50-100 people</option>
+                                <option value="100+">100+ people</option>
+                            </select>
+                        </div>
+                        <div class="contact-col-subject">   
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="website">Website</option>
+                                <option value="app">App</option> 
+                                <option value="social-media">Social Media</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-col-message">  
+                            <label id="mess" for="message">Message:</label>
+                            <textarea class="message" name="message" placeholder="Type Your Message"                   
+                            style="height:200px ; width:100%">
+                            </textarea> 
+                            <button type="submit"><b>Contact Sales</b></button>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </body>
+
+</html>

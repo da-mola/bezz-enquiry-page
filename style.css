@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(to bottom right, rgb(235, 83, 108), rgb(106, 69, 227));
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+label {
+    font-size: small;
+}
+
+:placeholder-shown, .website, #subject, #company-size{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+
+
+h1, p, .contactpage {
+      text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 0.6;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+  
+#p-1 {
+    margin-bottom: 0.03;
+}
+
+.contact-page {
+    display: flex;
+    row-gap: 70px;
+    column-gap: 30px;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    background: transparent;
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(130, 46, 133);
+    border-radius: 6px;
+    box-shadow: 30 20 70px rgb(25, 7, 26)0.1;
+}
+
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-col {
+    flex: 1;
+    margin: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-col-name , .contact-col-email , .contact-col-size, .contact-col-subject {
+  flex: 50%;
+  align-items: stretch;
+}
+
+
+.contact-col-message, button {
+    flex: 100%;
+    margin: 5px;
+  }
+
+
+@media (max-width: 800px) {
+  .contact-col-name , .contact-col-email , .contact-col-size, .contact-col-subject, .contact-col-message, button {
+    flex: 100%;
+  }
+}
+
+
+input[type="text"],
+input[type="email"],
+select,textarea {
+    border-radius: 7px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that things stay in place */
+    margin: 6px 7px 16px 7px; /* Top right bottom left margin */
+    padding: 10px; /* Some surrounding space */ 
+    resize: vertical; /* Allow users to vertically resize the textarea */
+    width: 100%; /* Full width */
+}
+
+
+textarea {
+    resize: vertical;
+}
+  
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    width: 100% 
+}
+
+
+
+button[type=button]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-page {
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+}
+
+
